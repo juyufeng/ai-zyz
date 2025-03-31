@@ -9,8 +9,10 @@ const router = createRouter({
   routes
 });
 
+const isShowProgress = false;
+
 router.beforeEach((to, from, next) => {
-  NProgress.start();
+  isShowProgress && NProgress.start();
   // 路由缓存
   useCachedViewStoreHook().addCachedView(to);
   // 页面 title
@@ -19,7 +21,7 @@ router.beforeEach((to, from, next) => {
 });
 
 router.afterEach(() => {
-  NProgress.done();
+  isShowProgress && NProgress.done();
 });
 
 export default router;

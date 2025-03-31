@@ -17,25 +17,40 @@ import { ref, reactive } from "vue";
 const active = ref(0);
 const tabbarData = reactive([
   {
-    icon: "wap-home-o",
-    title: "主页",
+    icon: "home-o",
+    title: "首页",
     to: {
-      name: "Demo"
+      name: "Home"
     }
   },
   {
-    icon: "gem-o",
-    title: "工具",
+    icon: "notes-o",
+    title: "下单历史",
     to: {
-      name: "Tools"
+      name: "History"
+    }
+  },
+  {
+    icon: "orders-o",
+    title: "订单",
+    to: {
+      name: "Order"
+    }
+  },
+  {
+    icon: "todo-list-o",
+    title: "任务",
+    to: {
+      name: "Task"
     }
   },
   {
     icon: "user-o",
-    title: "关于",
+    title: "我的",
     to: {
-      name: "About"
+      name: "Profile"
     }
   }
 ]);
 </script>
+
