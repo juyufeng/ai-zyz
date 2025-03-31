@@ -27,3 +27,16 @@
 1. 安装依赖
 ```bash
 npm install
+```
+2. 运行项目
+```bash
+npm run dev
+```
+3. 打包项目
+```bash
+npm run build
+```
+## 贡献
+本项目由 AI 助手完全编写，欢迎提出问题和建议。
+## 许可证
+本项目采用 MIT 许可证。
